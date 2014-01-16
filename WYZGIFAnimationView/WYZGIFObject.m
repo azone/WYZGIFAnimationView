@@ -75,7 +75,6 @@
                 CFNumberRef heightRef = CFDictionaryGetValue(imageFrameProperty, kCGImagePropertyPixelHeight);
                 CFNumberGetValue(heightRef, kCFNumberCGFloatType, &height);
                 
-                CGFloat scale = [UIScreen mainScreen].scale;
                 size = CGSizeMake(width / scale, height / scale);
             }
             
