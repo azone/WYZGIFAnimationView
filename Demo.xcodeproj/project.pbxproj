@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD7A773A18884C46007DD17E /* WYZGIFAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A773718884C46007DD17E /* WYZGIFAnimationView.m */; };
+		DD7A773B18884C46007DD17E /* WYZGIFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A773918884C46007DD17E /* WYZGIFObject.m */; };
 		DD878FDF18770324003D9499 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD878FDE18770324003D9499 /* Foundation.framework */; };
 		DD878FE118770324003D9499 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD878FE018770324003D9499 /* CoreGraphics.framework */; };
 		DD878FE318770324003D9499 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD878FE218770324003D9499 /* UIKit.framework */; };
@@ -19,6 +21,12 @@
 		DD878FFA18770325003D9499 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD878FE218770324003D9499 /* UIKit.framework */; };
 		DD87900218770325003D9499 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD87900018770325003D9499 /* InfoPlist.strings */; };
 		DD87900418770325003D9499 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87900318770325003D9499 /* DemoTests.m */; };
+		DD87900F187704A3003D9499 /* test1.gif in Resources */ = {isa = PBXBuildFile; fileRef = DD87900D187704A3003D9499 /* test1.gif */; };
+		DD879010187704A3003D9499 /* test2.gif in Resources */ = {isa = PBXBuildFile; fileRef = DD87900E187704A3003D9499 /* test2.gif */; };
+		DD879012187704F2003D9499 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD879011187704F2003D9499 /* ImageIO.framework */; };
+		DD87901818772009003D9499 /* test3.gif in Resources */ = {isa = PBXBuildFile; fileRef = DD87901718772009003D9499 /* test3.gif */; };
+		DD87901E18773E38003D9499 /* test4.gif in Resources */ = {isa = PBXBuildFile; fileRef = DD87901D18773E38003D9499 /* test4.gif */; };
+		DD87902018773E47003D9499 /* test5.gif in Resources */ = {isa = PBXBuildFile; fileRef = DD87901F18773E47003D9499 /* test5.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD7A773618884C46007DD17E /* WYZGIFAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZGIFAnimationView.h; sourceTree = "<group>"; };
+		DD7A773718884C46007DD17E /* WYZGIFAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZGIFAnimationView.m; sourceTree = "<group>"; };
+		DD7A773818884C46007DD17E /* WYZGIFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZGIFObject.h; sourceTree = "<group>"; };
+		DD7A773918884C46007DD17E /* WYZGIFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZGIFObject.m; sourceTree = "<group>"; };
 		DD878FDB18770324003D9499 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD878FDE18770324003D9499 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD878FE018770324003D9499 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +60,12 @@
 		DD878FFF18770325003D9499 /* DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoTests-Info.plist"; sourceTree = "<group>"; };
 		DD87900118770325003D9499 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD87900318770325003D9499 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
+		DD87900D187704A3003D9499 /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test1.gif; sourceTree = "<group>"; };
+		DD87900E187704A3003D9499 /* test2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test2.gif; sourceTree = "<group>"; };
+		DD879011187704F2003D9499 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		DD87901718772009003D9499 /* test3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test3.gif; sourceTree = "<group>"; };
+		DD87901D18773E38003D9499 /* test4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test4.gif; sourceTree = "<group>"; };
+		DD87901F18773E47003D9499 /* test5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test5.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD879012187704F2003D9499 /* ImageIO.framework in Frameworks */,
 				DD878FE118770324003D9499 /* CoreGraphics.framework in Frameworks */,
 				DD878FE318770324003D9499 /* UIKit.framework in Frameworks */,
 				DD878FDF18770324003D9499 /* Foundation.framework in Frameworks */,
@@ -74,6 +93,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD7A773518884C46007DD17E /* WYZGIFAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				DD7A773618884C46007DD17E /* WYZGIFAnimationView.h */,
+				DD7A773718884C46007DD17E /* WYZGIFAnimationView.m */,
+				DD7A773818884C46007DD17E /* WYZGIFObject.h */,
+				DD7A773918884C46007DD17E /* WYZGIFObject.m */,
+			);
+			path = WYZGIFAnimationView;
+			sourceTree = SOURCE_ROOT;
+		};
 		DD878FD218770324003D9499 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +126,7 @@
 		DD878FDD18770324003D9499 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD879011187704F2003D9499 /* ImageIO.framework */,
 				DD878FDE18770324003D9499 /* Foundation.framework */,
 				DD878FE018770324003D9499 /* CoreGraphics.framework */,
 				DD878FE218770324003D9499 /* UIKit.framework */,
@@ -107,9 +138,15 @@
 		DD878FE418770324003D9499 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DD7A773518884C46007DD17E /* WYZGIFAnimationView */,
 				DD878FED18770324003D9499 /* AppDelegate.h */,
 				DD878FEE18770324003D9499 /* AppDelegate.m */,
 				DD878FF018770324003D9499 /* Images.xcassets */,
+				DD87900D187704A3003D9499 /* test1.gif */,
+				DD87900E187704A3003D9499 /* test2.gif */,
+				DD87901718772009003D9499 /* test3.gif */,
+				DD87901D18773E38003D9499 /* test4.gif */,
+				DD87901F18773E47003D9499 /* test5.gif */,
 				DD878FE518770324003D9499 /* Supporting Files */,
 			);
 			path = Demo;
@@ -219,8 +256,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD87901818772009003D9499 /* test3.gif in Resources */,
+				DD87900F187704A3003D9499 /* test1.gif in Resources */,
+				DD87902018773E47003D9499 /* test5.gif in Resources */,
 				DD878FE918770324003D9499 /* InfoPlist.strings in Resources */,
+				DD87901E18773E38003D9499 /* test4.gif in Resources */,
 				DD878FF118770324003D9499 /* Images.xcassets in Resources */,
+				DD879010187704A3003D9499 /* test2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7A773B18884C46007DD17E /* WYZGIFObject.m in Sources */,
+				DD7A773A18884C46007DD17E /* WYZGIFAnimationView.m in Sources */,
 				DD878FEF18770324003D9499 /* AppDelegate.m in Sources */,
 				DD878FEB18770324003D9499 /* main.m in Sources */,
 			);
@@ -443,6 +487,7 @@
 				DD87900918770325003D9499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD87900A18770325003D9499 /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +496,7 @@
 				DD87900C18770325003D9499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

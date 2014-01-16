@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WYZGIFAnimationView.h"
+#import "WYZGIFObject.h"
 
 @implementation AppDelegate
 
@@ -16,6 +18,15 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+
+    
+    
+    WYZGIFObject *GIFObject = [WYZGIFObject GIFObjectNamed:@"test1.gif"];
+    WYZGIFAnimationView *animationView = [[WYZGIFAnimationView alloc] initWithGIFObject:GIFObject];
+    [self.window addSubview:animationView];
+    [animationView startAnimation];
+    
     return YES;
 }
 
