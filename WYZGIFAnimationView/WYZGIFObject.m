@@ -20,7 +20,7 @@
 @implementation WYZGIFObject
 
 + (instancetype)GIFObjectNamed:(NSString *)name {
-    NSString *fileName = [name stringByDeletingLastPathComponent];
+    NSString *fileName = [name stringByDeletingPathExtension];
     NSString *fileExtension = [name pathExtension];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:fileExtension];
     return [self GIFObjectWithContentsOfFile:filePath];

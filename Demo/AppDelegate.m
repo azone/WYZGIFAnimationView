@@ -19,10 +19,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-
-    
-    
-    WYZGIFObject *GIFObject = [WYZGIFObject GIFObjectNamed:@"test1.gif"];
+    WYZGIFObject *GIFObject = [WYZGIFObject GIFObjectNamed:@"test4.gif"];
     WYZGIFAnimationView *animationView = [[WYZGIFAnimationView alloc] initWithGIFObject:GIFObject];
     [self.window addSubview:animationView];
     [animationView startAnimation];
