@@ -19,10 +19,25 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    WYZGIFObject *GIFObject = [WYZGIFObject GIFObjectNamed:@"test4.gif"];
+    WYZGIFObject *GIFObject = [WYZGIFObject GIFObjectNamed:@"test3.gif"];
     WYZGIFAnimationView *animationView = [[WYZGIFAnimationView alloc] initWithGIFObject:GIFObject];
+    animationView.frame = ({
+        CGRect frame = animationView.frame;
+        frame.origin = CGPointMake(40, 40);
+        frame;
+    });
     [self.window addSubview:animationView];
     [animationView startAnimation];
+    
+    WYZGIFObject *nonUniformVelocityGIFObject = [WYZGIFObject GIFObjectNamed:@"non-uniform-velocity.gif"];
+    WYZGIFAnimationView *nonUniformVelocityAnimationView = [[WYZGIFAnimationView alloc] initWithGIFObject:nonUniformVelocityGIFObject];
+    nonUniformVelocityAnimationView.frame = ({
+        CGRect frame = nonUniformVelocityAnimationView.frame;
+        frame.origin = CGPointMake(CGRectGetMaxX(animationView.frame) + 20, 40);
+        frame;
+    });
+    [self.window addSubview:nonUniformVelocityAnimationView];
+    [nonUniformVelocityAnimationView startAnimation];
     
     return YES;
 }

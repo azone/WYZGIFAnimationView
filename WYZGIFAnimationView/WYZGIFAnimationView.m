@@ -14,6 +14,7 @@
 @property (assign, nonatomic) NSUInteger currentFrame;
 @property (assign, nonatomic) NSInteger currentLoopNumber;
 @property (assign, nonatomic) BOOL isInfiniteLoop;
+@property (assign, nonatomic) BOOL isAnimating;
 
 @property (strong, nonatomic) NSTimer *timer;
 
@@ -28,6 +29,8 @@
         self.isInfiniteLoop = self.GIFObject.animationRepeatCount == 0;
         self.currentLoopNumber = 0;
         self.imageView = [[UIImageView alloc] initWithFrame:CGRectZero];
+        self.imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        self.imageView.contentMode = UIViewContentModeScaleToFill;
         [self addSubview:self.imageView];
         self.frame = ({
             CGRect frame = self.frame;
@@ -44,11 +47,6 @@
     }
 }
 
-- (void)setFrame:(CGRect)frame {
-    [super setFrame:frame];
-    _imageView.frame = self.bounds;
-}
-
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];
     if (!newSuperview) {
@@ -56,26 +54,31 @@
     }
 }
 
-- (BOOL)isAnimating {
-    return [self.timer isValid];
-}
-
 - (void)startAnimation {
-    NSTimeInterval delay = [self.GIFObject.frameDelays[self.currentFrame] doubleValue];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(playAnimationWithTimer:) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+    self.isAnimating = YES;
+    [self playAnimationWithTimer:nil];
 }
 
 - (void)stopAnimation {
-    [self.timer invalidate];
+    if ([self.timer isValid]) {
+        [self.timer invalidate];
+    }
     self.timer = nil;
+    self.isAnimating = NO;
 }
 
 - (void)playAnimationWithTimer:(NSTimer *)timer {
+    if (!self.isAnimating) {
+        return;
+    }
     WYZGIFObject *GIFObject = self.GIFObject;
     if (self.isInfiniteLoop || self.currentLoopNumber < GIFObject.animationRepeatCount) {
         UIImage *currentImage = GIFObject.frameImages[self.currentFrame];
         self.imageView.image = currentImage;
+        
+        NSTimeInterval delay = [self.GIFObject.frameDelays[self.currentFrame] doubleValue];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(playAnimationWithTimer:) userInfo:nil repeats:NO];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
         
         self.currentFrame++;
         if (self.currentFrame >= [GIFObject.frameImages count]) {

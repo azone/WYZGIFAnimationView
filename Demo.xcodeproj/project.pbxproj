@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD50B9A41889A35C00A544E1 /* non-uniform-velocity.gif in Resources */ = {isa = PBXBuildFile; fileRef = DD50B9A31889A35C00A544E1 /* non-uniform-velocity.gif */; };
 		DD7A773A18884C46007DD17E /* WYZGIFAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A773718884C46007DD17E /* WYZGIFAnimationView.m */; };
 		DD7A773B18884C46007DD17E /* WYZGIFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A773918884C46007DD17E /* WYZGIFObject.m */; };
 		DD878FDF18770324003D9499 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD878FDE18770324003D9499 /* Foundation.framework */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD50B9A31889A35C00A544E1 /* non-uniform-velocity.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "non-uniform-velocity.gif"; sourceTree = "<group>"; };
 		DD7A773618884C46007DD17E /* WYZGIFAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZGIFAnimationView.h; sourceTree = "<group>"; };
 		DD7A773718884C46007DD17E /* WYZGIFAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYZGIFAnimationView.m; sourceTree = "<group>"; };
 		DD7A773818884C46007DD17E /* WYZGIFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYZGIFObject.h; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				DD87901718772009003D9499 /* test3.gif */,
 				DD87901D18773E38003D9499 /* test4.gif */,
 				DD87901F18773E47003D9499 /* test5.gif */,
+				DD50B9A31889A35C00A544E1 /* non-uniform-velocity.gif */,
 				DD878FE518770324003D9499 /* Supporting Files */,
 			);
 			path = Demo;
@@ -256,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD50B9A41889A35C00A544E1 /* non-uniform-velocity.gif in Resources */,
 				DD87901818772009003D9499 /* test3.gif in Resources */,
 				DD87900F187704A3003D9499 /* test1.gif in Resources */,
 				DD87902018773E47003D9499 /* test5.gif in Resources */,
